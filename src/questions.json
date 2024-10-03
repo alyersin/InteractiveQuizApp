@@ -1,0 +1,263 @@
+{
+    "general-knowledge": {
+      "title": "Cultura Generala",
+      "questions": [
+        {
+          "id": 1,
+          "question": "Care este capitala Frantei?",
+          "answers": ["Paris", "Londra", "Berlin", "Madrid"],
+          "correctAnswer": "Paris"
+        },
+        {
+          "id": 2,
+          "question": "Cine a scris \"Romeo si Julieta\"?",
+          "answers": ["Shakespeare", "Dante", "Cervantes", "Goethe"],
+          "correctAnswer": "Shakespeare"
+        },
+        {
+          "id": 3,
+          "question": "Cate planete sunt in sistemul solar?",
+          "answers": ["7", "8", "9", "10"],
+          "correctAnswer": "8"
+        },
+        {
+          "id": 4,
+          "question": "Care este cea mai mare mare din lume?",
+          "answers": ["Pacific", "Atlantic", "Indian", "Arctic"],
+          "correctAnswer": "Pacific"
+        },
+        {
+          "id": 5,
+          "question": "Cine a fost primul om pe Luna?",
+          "answers": ["Neil Armstrong", "Buzz Aldrin", "Yuri Gagarin", "John Glenn"],
+          "correctAnswer": "Neil Armstrong"
+        },
+        {
+          "id": 6,
+          "question": "Care este cel mai lung rau din lume?",
+          "answers": ["Amazon", "Nile", "Yangtze", "Mississippi"],
+          "correctAnswer": "Nile"
+        },
+        {
+          "id": 7,
+          "question": "Ce tara are cele mai multe insule?",
+          "answers": ["Suedia", "Indonezia", "Finlanda", "Grecia"],
+          "correctAnswer": "Suedia"
+        },
+        {
+          "id": 8,
+          "question": "Care este capitala Italiei?",
+          "answers": ["Roma", "Milano", "Venezia", "Napoli"],
+          "correctAnswer": "Roma"
+        },
+        {
+          "id": 9,
+          "question": "Cine a scris \"Micul Print\"?",
+          "answers": ["Antoine de Saint-Exupery", "Jules Verne", "Mark Twain", "Herman Melville"],
+          "correctAnswer": "Antoine de Saint-Exupery"
+        },
+        {
+          "id": 10,
+          "question": "Ce planeta este cunoscuta sub numele de \"Planeta Rosie\"?",
+          "answers": ["Venus", "Marte", "Jupiter", "Mercur"],
+          "correctAnswer": "Marte"
+        }
+      ]
+    },
+    "movies": {
+      "title": "Filme",
+      "questions": [
+        {
+          "id": 1,
+          "question": "Care a fost primul film din Universul Cinematografic Marvel?",
+          "answers": ["Iron Man", "Thor", "Captain America", "The Hulk"],
+          "correctAnswer": "Iron Man"
+        },
+        {
+          "id": 2,
+          "question": "Cine a regizat \"Titanic\"?",
+          "answers": ["James Cameron", "Steven Spielberg", "Christopher Nolan", "Ridley Scott"],
+          "correctAnswer": "James Cameron"
+        },
+        {
+          "id": 3,
+          "question": "Cine a castigat Oscarul pentru cel mai bun film in 2020?",
+          "answers": ["Parasite", "1917", "Ford v Ferrari", "Once Upon a Time in Hollywood"],
+          "correctAnswer": "Parasite"
+        },
+        {
+          "id": 4,
+          "question": "Care este cel mai lung film din istorie?",
+          "answers": ["Gone with the Wind", "The Godfather", "The Irishman", "Cleopatra"],
+          "correctAnswer": "Cleopatra"
+        },
+        {
+          "id": 5,
+          "question": "Cine a jucat rolul principal in \"The Matrix\"?",
+          "answers": ["Keanu Reeves", "Laurence Fishburne", "Hugo Weaving", "Carrie-Anne Moss"],
+          "correctAnswer": "Keanu Reeves"
+        },
+        {
+          "id": 6,
+          "question": "Ce film a avut cele mai mari incasari din toate timpurile?",
+          "answers": ["Avatar", "Titanic", "Star Wars: The Force Awakens", "Avengers: Endgame"],
+          "correctAnswer": "Avatar"
+        },
+        {
+          "id": 7,
+          "question": "Ce film de animatie a castigat Oscarul in 2022?",
+          "answers": ["Encanto", "Luca", "Raya and the Last Dragon", "Flee"],
+          "correctAnswer": "Encanto"
+        },
+        {
+          "id": 8,
+          "question": "Care este numele personajului principal din \"Pirates of the Caribbean\"?",
+          "answers": ["Jack Sparrow", "Will Turner", "Davy Jones", "Hector Barbossa"],
+          "correctAnswer": "Jack Sparrow"
+        },
+        {
+          "id": 9,
+          "question": "Cine a cantat piesa tematica din \"Titanic\"?",
+          "answers": ["Celine Dion", "Whitney Houston", "Mariah Carey", "Adele"],
+          "correctAnswer": "Celine Dion"
+        },
+        {
+          "id": 10,
+          "question": "Ce film a fost lansat in 1994 si a castigat 7 premii Oscar?",
+          "answers": ["The Shawshank Redemption", "Pulp Fiction", "Forrest Gump", "The Lion King"],
+          "correctAnswer": "Forrest Gump"
+        }
+      ]
+    },
+    "history": {
+      "title": "Istorie",
+      "questions": [
+        {
+          "id": 1,
+          "question": "Care a fost anul in care a cazut Zidul Berlinului?",
+          "answers": ["1989", "1991", "1987", "1990"],
+          "correctAnswer": "1989"
+        },
+        {
+          "id": 2,
+          "question": "Cine a fost primul presedinte al Statelor Unite?",
+          "answers": ["George Washington", "Thomas Jefferson", "Abraham Lincoln", "Franklin Roosevelt"],
+          "correctAnswer": "George Washington"
+        },
+        {
+          "id": 3,
+          "question": "In ce an a avut loc Razboiul Civil American?",
+          "answers": ["1861-1865", "1775-1783", "1812-1815", "1860-1865"],
+          "correctAnswer": "1861-1865"
+        },
+        {
+          "id": 4,
+          "question": "Cine a fost primul om de stiinta care a propus teoria heliocentrica?",
+          "answers": ["Copernic", "Galileo", "Kepler", "Newton"],
+          "correctAnswer": "Copernic"
+        },
+        {
+          "id": 5,
+          "question": "Ce civilizatie a construit piramidele?",
+          "answers": ["Greci", "Romani", "Egipteni", "Azteci"],
+          "correctAnswer": "Egipteni"
+        },
+        {
+          "id": 6,
+          "question": "Cine a fost liderul Uniunii Sovietice in timpul Celui de-Al Doilea Razboi Mondial?",
+          "answers": ["Stalin", "Trotski", "Lenin", "Gorbaciov"],
+          "correctAnswer": "Stalin"
+        },
+        {
+          "id": 7,
+          "question": "Ce razboi a avut loc intre 1914 si 1918?",
+          "answers": ["Razboiul Rece", "Razboiul Civil American", "Primul Razboi Mondial", "Al Doilea Razboi Mondial"],
+          "correctAnswer": "Primul Razboi Mondial"
+        },
+        {
+          "id": 8,
+          "question": "Cine a fost cunoscut ca \"Femeia de Fier\"?",
+          "answers": ["Angela Merkel", "Margaret Thatcher", "Golda Meir", "Indira Gandhi"],
+          "correctAnswer": "Margaret Thatcher"
+        },
+        {
+          "id": 9,
+          "question": "Cine a descoperit America?",
+          "answers": ["Cristofor Columb", "Ferdinand Magellan", "Vasco da Gama", "James Cook"],
+          "correctAnswer": "Cristofor Columb"
+        },
+        {
+          "id": 10,
+          "question": "Care a fost capitala Imperiului Roman?",
+          "answers": ["Roma", "Constantinopol", "Alexandria", "Carthage"],
+          "correctAnswer": "Roma"
+        }
+      ]
+    },
+    "sports": {
+      "title": "Sport",
+      "questions": [
+        {
+          "id": 1,
+          "question": "Care este cel mai popular sport din lume?",
+          "answers": ["Fotbal", "Cricket", "Baschet", "Rugby"],
+          "correctAnswer": "Fotbal"
+        },
+        {
+          "id": 2,
+          "question": "Cine detine recordul pentru cele mai multe medalii olimpice?",
+          "answers": ["Michael Phelps", "Usain Bolt", "Carl Lewis", "Larisa Latynina"],
+          "correctAnswer": "Michael Phelps"
+        },
+        {
+          "id": 3,
+          "question": "In ce an au avut loc primele Jocuri Olimpice moderne?",
+          "answers": ["1896", "1900", "1904", "1912"],
+          "correctAnswer": "1896"
+        },
+        {
+          "id": 4,
+          "question": "Ce echipa a castigat cel mai multe titluri de campioana in fotbalul englez?",
+          "answers": ["Liverpool", "Manchester United", "Arsenal", "Chelsea"],
+          "correctAnswer": "Manchester United"
+        },
+        {
+          "id": 5,
+          "question": "Cine este considerat cel mai bun jucator de fotbal din toate timpurile?",
+          "answers": ["Pelé", "Diego Maradona", "Lionel Messi", "Cristiano Ronaldo"],
+          "correctAnswer": "Pelé"
+        },
+        {
+          "id": 6,
+          "question": "In ce sport se foloseste un racheta?",
+          "answers": ["Tenis", "Fotbal", "Hochei", "Golf"],
+          "correctAnswer": "Tenis"
+        },
+        {
+          "id": 7,
+          "question": "Ce tara a castigat cea mai mare parte din World Cup la fotbal?",
+          "answers": ["Brazilia", "Germania", "Italia", "Argentina"],
+          "correctAnswer": "Brazilia"
+        },
+        {
+          "id": 8,
+          "question": "Ce jucator a marcat cele mai multe goluri in istoria fotbalului?",
+          "answers": ["Cristiano Ronaldo", "Lionel Messi", "Pelé", "Gerd Müller"],
+          "correctAnswer": "Cristiano Ronaldo"
+        },
+        {
+          "id": 9,
+          "question": "Care este sportul national al Japoniei?",
+          "answers": ["Sumo", "Baseball", "Fotbal", "Tenis"],
+          "correctAnswer": "Sumo"
+        },
+        {
+          "id": 10,
+          "question": "Cine a castigat Campionatul Mondial de Fotbal in 2018?",
+          "answers": ["Franta", "Germania", "Brazilia", "Argentina"],
+          "correctAnswer": "Franta"
+        }
+      ]
+    }
+  }
+  
