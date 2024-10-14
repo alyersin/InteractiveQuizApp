@@ -36,7 +36,7 @@ export default function AddQuestion({ quizid }) {
 
     localStorage.setItem('questions', JSON.stringify(updatedQuestions));
     setQuestions(updatedQuestions);
-    alert('Question added to local storage');
+    alert('Intrebare adaugata');
   };
 
   return (
