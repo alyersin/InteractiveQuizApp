@@ -1,82 +1,65 @@
 import { useRouter } from 'next/router';
-import Link from 'next/link';
 import { useState, useEffect } from 'react';
-import fs from 'fs';
-import path from 'path';
 
-export async function getStaticProps() {
-  const filePath = path.join(process.cwd(), 'src/questions.json');
-  const jsonData = fs.readFileSync(filePath);
-  const qData = JSON.parse(jsonData);
-
-  return {
-    props: {
-      qData,
-    },
-  };
-}
-
-export async function getStaticPaths() {
-  const filePath = path.join(process.cwd(), 'src/questions.json');
-  const jsonData = fs.readFileSync(filePath);
-  const qData = JSON.parse(jsonData);
-
-  const paths = Object.keys(qData).flatMap((quizid) =>
-    qData[quizid].questions.map((question) => ({
-      params: { quizid, questionid: question.id.toString() },
-    }))
-  );
-
-  return {
-    paths,
-    fallback: false,
-  };
-}
-
-export default function Question({ qData }) {
+export default function Question() {
   const router = useRouter();
   const { quizid, questionid } = router.query;
-  const quiz = qData[quizid];
-
-  if (!quiz) {
-    return <div>Eroare la incarcare</div>;
-  }
-
-  const question = quiz.questions.find((q) => q.id == questionid);
-
-  if (!question) {
-    return <div>Eroare la incarcare</div>;
-  }
-
+  const [quiz, setQuiz] = useState(null); 
+  const [question, setQuestion] = useState(null); 
+  const [loading, setLoading] = useState(true);
   const [selectedAnswer, setSelectedAnswer] = useState(null);
   const [feedback, setFeedback] = useState('');
   const [selectedAnswers, setSelectedAnswers] = useState([]);
 
   useEffect(() => {
-    setFeedback('');
-    setSelectedAnswer(null);
-  }, [questionid]);
+    if (quizid) {
+      fetch(`/api/questions`)
+        .then((res) => res.json())
+        .then((data) => {
+          const quizData = data[quizid];
+          const currentQuestion = quizData?.questions.find((q) => q.id == questionid);
+          setQuiz(quizData);
+          setQuestion(currentQuestion); 
+          setLoading(false);
+          setSelectedAnswer(null); 
+          setFeedback(''); 
+        })
+        .catch((error) => {
+          console.error('Error fetching question:', error);
+          setLoading(false);
+        });
+    }
+  }, [quizid, questionid]); 
 
   const handleChange = (answer) => {
     setSelectedAnswer(answer);
     setFeedback(answer === question.correctAnswer ? 'Corect!' : `Incorect! Raspunsul corect este: ${question.correctAnswer}`);
   };
 
-  const isLastQuestion = questionid == quiz.questions.length;
-
   const handleNext = () => {
-    setSelectedAnswers((prevAnswers) => [...prevAnswers, selectedAnswer]);
+    const updatedAnswers = [...selectedAnswers, selectedAnswer];
+    setSelectedAnswers(updatedAnswers);
+
+    const nextQuestionId = parseInt(questionid) + 1;
+    const isLastQuestion = nextQuestionId > quiz.questions.length;
 
     if (isLastQuestion) {
       router.push({
         pathname: `/quiz/${quizid}/results`,
-        query: { selectedAnswers: JSON.stringify([...selectedAnswers, selectedAnswer]) },
+        query: { selectedAnswers: JSON.stringify(updatedAnswers) },
       });
     } else {
-
-      router.push(`/quiz/${quizid}/question/${parseInt(questionid) + 1}`);
+      router.push(`/quiz/${quizid}/question/${nextQuestionId}`);
     }
   };
+
+  if (loading) {
+    return <div>Se incarca...</div>;
+  }
+
+  if (!question) {
+    return <div>Eroare la incarcare</div>;
+  }
 
   return (
     <div className='container'>
@@ -90,7 +73,7 @@ export default function Question({ qData }) {
                 value={answer}
                 checked={selectedAnswer === answer}
                 onChange={() => handleChange(answer)}
-                disabled={selectedAnswer !== null}
+                disabled={selectedAnswer !== null} 
               />
               {answer}
             </label>
@@ -99,7 +82,7 @@ export default function Question({ qData }) {
       </ul>
       {feedback && <p>{feedback}</p>}
       <button onClick={handleNext}>
-        {isLastQuestion ? 'Termina Quizul' : 'Intrebarea urmatoare'}
+        {parseInt(questionid) === quiz.questions.length ? 'Termina Quizul' : 'Intrebarea Urmatoare'}
       </button>
     </div>
   );

@@ -1,5 +1,6 @@
 import Link from 'next/link';
 
+
 const categories = [
   { id: 'general-knowledge', name: 'Cultura Generala' },
   { id: 'movies', name: 'Filme' },
