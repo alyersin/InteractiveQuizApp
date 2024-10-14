@@ -12,7 +12,7 @@ body, html {
   background-repeat: no-repeat;
 }
 
-h1 {
+h1, h2 {
   color: #213a57;
 }
 
@@ -47,15 +47,18 @@ a, button {
   padding: 10px;
   text-decoration: none;
   color: black;
-  background-color: #1aac5b;
   font-size: 1.2rem;
   border: none;
   cursor: pointer;
 }
 
+.categorii {
+  background-color: #1aac5b;
+}
+
 a:hover, button:hover {
   transition: .4s ease-in-out;
-  scale: 120%;
+  scale: 110%;
 }
 
 button {
@@ -104,11 +107,90 @@ ul {
   background-color: transparent;
 }
 
-
 .rasp-corect {
   color: green;
 }
 
 .rasp-incorect {
   color: black;
+}
+
+.start-quiz {
+  background-color: #1aac5b;
+}
+
+.adauga-container {
+  padding: 100px 0 0 0;
+}
+
+.adauga-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.adauga-form input[type="text"] {
+  width: 100%;
+  padding: 6px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.adauga-form input[type="text"]:hover {
+  border-color: #88d4a3;
+}
+
+.adauga-form input[type="text"]:focus {
+  border-color: #1aac5b;
+  box-shadow: 0 0 5px rgba(26, 172, 91, 0.5);
+  outline: none;
+}
+
+.variante-rasp, .intrebare, .rasp-corect {
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+}
+
+.adauga-form label {
+  font-weight: 500;
+  margin-bottom: 5px;
+  display: block;
+  color: #333;
+  font-size: 1rem;
+}
+
+.adauga-btn {
+  background-color: #1aac5b;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.adauga-btn:hover {
+  background-color: #159d4e;
+  transform: scale(1.05);
+}
+
+.adauga-btn:focus {
+  outline: 2px solid #1aac5b;
+  outline-offset: 4px;
+}
+
+@media (max-width: 768px) {
+  .adauga-form {
+    width: 90%;
+  }
 }

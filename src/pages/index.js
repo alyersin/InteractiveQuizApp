@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div className='container container-home'>
       <h1>Bine ai venit</h1>
-      <Link href="/categories">
+      <Link className='categorii' href="/categories">
        Categorii
       </Link>
 
