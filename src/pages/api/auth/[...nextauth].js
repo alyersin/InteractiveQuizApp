@@ -28,12 +28,12 @@ export default NextAuth({
           throw new Error("Invalid password");
         }
       
-        return { email: user.email }; // Return user object
+        return { email: user.email }; 
       }      
     }),
   ],
   pages: {
-    signIn: '/auth/signin', // Custom sign-in page
+    signIn: '/auth/signin', 
   },
   session: {
     jwt: true,

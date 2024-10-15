@@ -1,4 +1,4 @@
-// src/pages/api/auth/register.js
+
 import { hash } from "bcryptjs"; 
 import clientPromise from './DB'; 
 
@@ -11,7 +11,7 @@ export default async function handler(req, res) {
     }
 
     try {
-      const client = await clientPromise; // Connect to the database
+      const client = await clientPromise; 
       const db = client.db();
 
       const hashedPassword = await hash(password, 12);

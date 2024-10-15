@@ -18,15 +18,15 @@ const registerHandler = async (event) => {
     },
   });
 
-  const text = await response.text(); // Log the raw response text for debugging
-  console.log("Response Text:", text); // Log the raw response text
+  const text = await response.text(); 
+  console.log("Response Text:", text);
 
   let data;
   try {
-    data = JSON.parse(text); // Attempt to parse the response as JSON
+    data = JSON.parse(text); 
   } catch (error) {
     console.error("Failed to parse JSON:", error);
-    return; // Exit if JSON parsing fails
+    return; 
   }
 
   console.log(data);

@@ -1,4 +1,3 @@
-// src/pages/auth/SignIn.js
 import { getCsrfToken } from "next-auth/react";
 
 export default function SignIn({ csrfToken }) {
