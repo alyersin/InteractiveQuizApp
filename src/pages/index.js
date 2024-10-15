@@ -1,8 +1,6 @@
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
-import SignIn from '../pages/auth/SignIn'; 
-import RegistrationForm from './RegistrationForm';
 
 
 
@@ -10,9 +8,6 @@ export default function Home() {
   console.log("Test from the homepage")
   return (
     <div className='container container-home'>
-
-        {/* <SignIn />
-        <RegistrationForm /> */}
 
       <h1>Bine ai venit</h1>
       <Link className='categorii' href="/categories">
