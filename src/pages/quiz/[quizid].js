@@ -1,3 +1,4 @@
+// [quizid].js
 import { useRouter } from 'next/router';
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
@@ -15,18 +16,11 @@ export default function Quiz() {
         .then((res) => res.json())
         .then((data) => {
           const predefinedQuestions = data[quizid];
-
-          const storedQuestions = JSON.parse(localStorage.getItem('questions')) || {};
-
-          const mergedQuestions = predefinedQuestions.questions.concat(
-            Object.values(storedQuestions).filter(q => q.quizid === quizid)
-          );
-
-          setQuiz({
-            ...predefinedQuestions,
-            questions: mergedQuestions,
-          });
-
+          if (predefinedQuestions) {
+            setQuiz(predefinedQuestions);
+          } else {
+            console.error('Quiz not found');
+          }
           setLoading(false);
         })
         .catch((error) => {
@@ -52,7 +46,6 @@ export default function Quiz() {
       </Link>
       <div className='adauga-container'>
         <h2>Adauga o intrebare noua pentru categoria {quiz.title}</h2>
-        
         <AddQuestion quizid={quizid} />
       </div>
     </div>

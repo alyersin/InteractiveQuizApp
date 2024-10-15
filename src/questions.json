@@ -258,6 +258,332 @@
           "correctAnswer": "Franta"
         }
       ]
-    }
+    }, 
+    "music": {
+        "title": "Muzica",
+        "questions": [
+            {
+                "id": 1,
+                "question": "Cine a compus Simfonia a IX-a?",
+                "answers": ["Beethoven", "Mozart", "Brahms", "Bach"],
+                "correctAnswer": "Beethoven"
+            },
+            {
+                "id": 2,
+                "question": "Care este cel mai bine vandut album din toate timpurile?",
+                "answers": ["Thriller", "Back in Black", "The Dark Side of the Moon", "The Beatles"],
+                "correctAnswer": "Thriller"
+            },
+            {
+                "id": 3,
+                "question": "Cine este cunoscut ca 'Regele Rock and Roll'?",
+                "answers": ["Elvis Presley", "Chuck Berry", "Little Richard", "Buddy Holly"],
+                "correctAnswer": "Elvis Presley"
+            },
+            {
+                "id": 4,
+                "question": "Ce formatie a lansat piesa 'Bohemian Rhapsody'?",
+                "answers": ["Queen", "The Beatles", "Led Zeppelin", "Pink Floyd"],
+                "correctAnswer": "Queen"
+            },
+            {
+                "id": 5,
+                "question": "Cine a cantat piesa 'I Will Always Love You'?",
+                "answers": ["Whitney Houston", "Celine Dion", "Mariah Carey", "Adele"],
+                "correctAnswer": "Whitney Houston"
+            },
+            {
+                "id": 6,
+                "question": "Care este genul muzical asociat cu Bob Marley?",
+                "answers": ["Reggae", "Rock", "Jazz", "Blues"],
+                "correctAnswer": "Reggae"
+            },
+            {
+                "id": 7,
+                "question": "Cine a fost cunoscut ca 'Printul Pop'?",
+                "answers": ["Michael Jackson", "Prince", "Justin Timberlake", "George Michael"],
+                "correctAnswer": "Prince"
+            },
+            {
+                "id": 8,
+                "question": "Ce artist a cantat 'Rolling in the Deep'?",
+                "answers": ["Adele", "Beyoncé", "Rihanna", "Taylor Swift"],
+                "correctAnswer": "Adele"
+            },
+            {
+                "id": 9,
+                "question": "Care este numele piesei celebre interpretate de Nirvana?",
+                "answers": ["Smells Like Teen Spirit", "Wonderwall", "Hotel California", "Enter Sandman"],
+                "correctAnswer": "Smells Like Teen Spirit"
+            },
+            {
+                "id": 10,
+                "question": "Cine este cunoscut pentru piesa 'Like a Rolling Stone'?",
+                "answers": ["Bob Dylan", "Johnny Cash", "Bruce Springsteen", "Elton John"],
+                "correctAnswer": "Bob Dylan"
+            }
+        ]
+    },
+    "geography": {
+        "title": "Geografie",
+        "questions": [
+            {
+                "id": 1,
+                "question": "Care este cel mai mare continent?",
+                "answers": ["Asia", "Africa", "America", "Europa"],
+                "correctAnswer": "Asia"
+            },
+            {
+                "id": 2,
+                "question": "Care este capitala Japoniei?",
+                "answers": ["Tokyo", "Seul", "Beijing", "Bangkok"],
+                "correctAnswer": "Tokyo"
+            },
+            {
+                "id": 3,
+                "question": "Ce tara are cea mai mare populatie?",
+                "answers": ["China", "India", "Statele Unite", "Indonezia"],
+                "correctAnswer": "China"
+            },
+            {
+                "id": 4,
+                "question": "Ce ocean este cel mai mare?",
+                "answers": ["Pacific", "Atlantic", "Indian", "Arctic"],
+                "correctAnswer": "Pacific"
+            },
+            {
+                "id": 5,
+                "question": "Ce tara este cunoscuta ca 'tara Soarelui Rasare'?",
+                "answers": ["Japonia", "China", "Coreea de Sud", "Thailanda"],
+                "correctAnswer": "Japonia"
+            },
+            {
+                "id": 6,
+                "question": "Care este cel mai lung rau din lume?",
+                "answers": ["Amazon", "Nile", "Yangtze", "Mississippi"],
+                "correctAnswer": "Nile"
+            },
+            {
+                "id": 7,
+                "question": "in ce tara se afla Marea Moarta?",
+                "answers": ["Iordania", "Egipt", "Turcia", "Israel"],
+                "correctAnswer": "Iordania"
+            },
+            {
+                "id": 8,
+                "question": "Ce tara are cele mai multe insule?",
+                "answers": ["Suedia", "Indonezia", "Grecia", "Filipine"],
+                "correctAnswer": "Indonezia"
+            },
+            {
+                "id": 9,
+                "question": "Ce este un fjord?",
+                "answers": ["O vale adanca", "O insula", "Un golf ingust", "Un rau"],
+                "correctAnswer": "Un golf ingust"
+            },
+            {
+                "id": 10,
+                "question": "Ce munte este cel mai inalt din lume?",
+                "answers": ["K2", "Kangchenjunga", "Lhotse", "Everest"],
+                "correctAnswer": "Everest"
+            }
+        ]
+    },
+    "yes_no": {
+        "title": "Intrebare da/nu",
+        "questions": [
+            {
+                "id": 1,
+                "question": "Este apa un lichid?",
+                "answers": ["Da", "Nu"],
+                "correctAnswer": "Da"
+            },
+            {
+                "id": 2,
+                "question": "Pamantul este plat?",
+                "answers": ["Da", "Nu"],
+                "correctAnswer": "Nu"
+            },
+            {
+                "id": 3,
+                "question": "Este soarele o stea?",
+                "answers": ["Da", "Nu"],
+                "correctAnswer": "Da"
+            },
+            {
+                "id": 4,
+                "question": "Un an are 365 de zile?",
+                "answers": ["Da", "Nu"],
+                "correctAnswer": "Da"
+            },
+            {
+                "id": 5,
+                "question": "Exista viata pe Marte?",
+                "answers": ["Da", "Nu"],
+                "correctAnswer": "Nu"
+            },
+            {
+                "id": 6,
+                "question": "Este gheata rece?",
+                "answers": ["Da", "Nu"],
+                "correctAnswer": "Da"
+            },
+            {
+                "id": 7,
+                "question": "Luna este o planeta?",
+                "answers": ["Da", "Nu"],
+                "correctAnswer": "Nu"
+            },
+            {
+                "id": 8,
+                "question": "Exista oameni pe Titan?",
+                "answers": ["Da", "Nu"],
+                "correctAnswer": "Nu"
+            },
+            {
+                "id": 9,
+                "question": "Cainii pot zbura?",
+                "answers": ["Da", "Nu"],
+                "correctAnswer": "Nu"
+            },
+            {
+                "id": 10,
+                "question": "Este focul o forma de energie?",
+                "answers": ["Da", "Nu"],
+                "correctAnswer": "Da"
+            }
+        ]
+    },
+    "animals": {
+    "title": "Animale",
+    "questions": [
+        {
+            "id": 1,
+            "question": "Ce animal este cunoscut ca 'Regele junglei'?",
+            "answers": ["Leu", "Tigru", "Elefant", "Crocodil"],
+            "correctAnswer": "Leu"
+        },
+        {
+            "id": 2,
+            "question": "Cate picioare are un paianjen?",
+            "answers": ["8", "6", "4", "10"],
+            "correctAnswer": "8"
+        },
+        {
+            "id": 3,
+            "question": "Ce animal poate zbura?",
+            "answers": ["Pinguin", "Cantec de tarc", "Vultur", "Cangur"],
+            "correctAnswer": "Vultur"
+        },
+        {
+            "id": 4,
+            "question": "Ce animal este cel mai mare pe Pamant?",
+            "answers": ["Elefant", "Balena albastra", "Gorila", "Crocodil"],
+            "correctAnswer": "Balena albastra"
+        },
+        {
+            "id": 5,
+            "question": "Ce animal este cunoscut pentru invatarea limbajului uman?",
+            "answers": ["Caine", "Papagal", "Pisica", "Broasca testoasa"],
+            "correctAnswer": "Papagal"
+        },
+        {
+            "id": 6,
+            "question": "Ce animal este cel mai mic mamifer din lume?",
+            "answers": ["Musculita", "Soricel", "Perechea de taietori", "Banutul"],
+            "correctAnswer": "Musculita"
+        },
+        {
+            "id": 7,
+            "question": "Ce animal este cunoscut ca 'marele alb'?",
+            "answers": ["Tigru", "Leu", "Rechin alb", "Crocodil"],
+            "correctAnswer": "Rechin alb"
+        },
+        {
+            "id": 8,
+            "question": "Ce animal isi schimba culoarea pentru a se camufla?",
+            "answers": ["Cameleon", "Pisica", "Caine", "Elefant"],
+            "correctAnswer": "Cameleon"
+        },
+        {
+            "id": 9,
+            "question": "Ce animal este cel mai rapid pe uscat?",
+            "answers": ["Ghepard", "Cangur", "Cal", "Elefant"],
+            "correctAnswer": "Ghepard"
+        },
+        {
+            "id": 10,
+            "question": "Care este cel mai lung animal de pe Pamant?",
+            "answers": ["Balena albastra", "Squid", "Crocodil", "Giraffa"],
+            "correctAnswer": "Balena albastra"
+        }
+    ]
+},
+"science": {
+    "title": "stiinta",
+    "questions": [
+        {
+            "id": 1,
+            "question": "Ce este H2O?",
+            "answers": ["Apa", "Oxigen", "Dioxid de carbon", "Metan"],
+            "correctAnswer": "Apa"
+        },
+        {
+            "id": 2,
+            "question": "Cine a formulat teoria relativitatii?",
+            "answers": ["Newton", "Einstein", "Galileo", "Curie"],
+            "correctAnswer": "Einstein"
+        },
+        {
+            "id": 3,
+            "question": "Ce organ este responsabil pentru pomparea sangelui?",
+            "answers": ["Creier", "Plamani", "Ficat", "Inima"],
+            "correctAnswer": "Inima"
+        },
+        {
+            "id": 4,
+            "question": "Care este formula chimica a dioxidului de carbon?",
+            "answers": ["CO2", "O2", "H2O", "C6H12O6"],
+            "correctAnswer": "CO2"
+        },
+        {
+            "id": 5,
+            "question": "Ce este fotosinteza?",
+            "answers": ["Productia de oxigen", "Productia de energie", "Productia de glucoza", "Ambele"],
+            "correctAnswer": "Ambele"
+        },
+        {
+            "id": 6,
+            "question": "Cine a descoperit penicilina?",
+            "answers": ["Fleming", "Pasteur", "Curie", "Einstein"],
+            "correctAnswer": "Fleming"
+        },
+        {
+            "id": 7,
+            "question": "Ce planeta este cunoscuta ca 'Planeta Rosie'?",
+            "answers": ["Venus", "Marte", "Jupiter", "Saturn"],
+            "correctAnswer": "Marte"
+        },
+        {
+            "id": 8,
+            "question": "Ce este ADN-ul?",
+            "answers": ["Material genetic", "Proteine", "Carbohidrati", "Lipide"],
+            "correctAnswer": "Material genetic"
+        },
+        {
+            "id": 9,
+            "question": "Ce fel de energie este cea solara?",
+            "answers": ["Energie regenerabila", "Energie fosila", "Energie nucleara", "Energie mecanica"],
+            "correctAnswer": "Energie regenerabila"
+        },
+        {
+            "id": 10,
+            "question": "Care este elementul chimic cu simbolul 'O'?",
+            "answers": ["Oxigen", "Aur", "Carbon", "Azot"],
+            "correctAnswer": "Oxigen"
+        }
+    ]
+}
   }
+  
   

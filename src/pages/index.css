@@ -75,13 +75,38 @@ button {
   text-align: center;
 }
 
-ul {
+
+.categories-ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  font-size: 1.2rem;
+  gap: 10px; 
+  padding: 0; 
+/* border: 1px solid black; */
+}
+
+.categories-li {
+  flex: 1 0 calc(50% - 10px); 
+  max-width: 410px;
+  margin: auto; 
+  text-align: center;
+/* border: 1px solid black; */
+}
+
+.question-ul {
   display: flex;
   flex-direction: column;
   list-style-type: none;
   font-size: 1.2rem;
-  gap: 2px;
+  gap: 10px; 
+
 }
+
+/* .question.li {
+
+} */
+
 
 .link-icon {
   color: #0077B5; 
