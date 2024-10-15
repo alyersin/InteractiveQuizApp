@@ -1,3 +1,4 @@
+// questions.js
 import fs from 'fs';
 import path from 'path';
 
@@ -6,5 +7,5 @@ export default function handler(req, res) {
   const jsonData = fs.readFileSync(filePath);
   const questions = JSON.parse(jsonData);
   
-  res.status(200).json(questions);
+  res.status(200).json(questions); // This should return the complete categories object
 }
