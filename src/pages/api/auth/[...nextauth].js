@@ -1,8 +1,8 @@
 // src/pages/api/auth/[...nextauth].js
 import NextAuth from "next-auth";
 import CredentialsProvider from "next-auth/providers/credentials";
-import connectToDatabase from './DB'; // Adjust the path if necessary
-import { verifyPassword } from "../../../utils/auth"; // Ensure this path is correct
+import connectToDatabase from './DB'; 
+import { verifyPassword } from "../../../utils/auth"; 
 
 export default NextAuth({
   providers: [
@@ -13,8 +13,8 @@ export default NextAuth({
         password: { label: "Password", type: "password" },
       },
       async authorize(credentials) {
-        await connectToDatabase(); // Ensure DB connection is established
-        const client = await clientPromise; // Connect to your DB
+        await connectToDatabase(); 
+        const client = await clientPromise; 
         const db = client.db();
       
         const user = await db.collection("users").findOne({ email: credentials.email });
