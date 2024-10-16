@@ -1,6 +1,6 @@
-// [questionid].js
 import { useRouter } from 'next/router';
 import { useState, useEffect } from 'react';
+import Link from 'next/link';
 
 export default function Question() {
   const router = useRouter();
@@ -62,26 +62,28 @@ export default function Question() {
   }
 
   return (
-    <div className='container'>
-      <h1>{question.question}</h1>
-      <ul className='question-ul'>
+    <div className="question-page">
+      {/* GO HOME button */}
+      <Link href="/">
+        <button className="go-home-button">GO HOME</button>
+      </Link>
+
+      <h1 className="question-title">{question.question}</h1>
+      <ul className="answer-options">
         {question.answers.map((answer) => (
-          <li className='question-li' key={answer}>
-            <label className='answer-list'>
-              <input
-                type="checkbox"
-                value={answer}
-                checked={selectedAnswer === answer}
-                onChange={() => handleChange(answer)}
-                disabled={selectedAnswer !== null}
-              />
+          <li key={answer} className="answer-option">
+            <button
+              className={`answer-button ${selectedAnswer === answer ? 'selected' : ''}`}
+              onClick={() => handleChange(answer)}
+              disabled={selectedAnswer !== null}
+            >
               {answer}
-            </label>
+            </button>
           </li>
         ))}
       </ul>
-      {feedback && <p>{feedback}</p>}
-      <button onClick={handleNext}>
+      {feedback && <p className="feedback-text">{feedback}</p>}
+      <button className="next-button" onClick={handleNext}>
         {parseInt(questionid) === quiz.questions.length ? 'Termina Quizul' : 'Intrebarea Urmatoare'}
       </button>
     </div>

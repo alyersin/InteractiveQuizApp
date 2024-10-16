@@ -44,10 +44,7 @@ export default function Quiz() {
       <Link href={`/quiz/${quizid}/question/1`}>
         <button className='start-quiz'>Start Quiz</button>
       </Link>
-      <div className='adauga-container'>
-        <h2>Adauga o intrebare noua pentru categoria {quiz.title}</h2>
-        <AddQuestion quizid={quizid} />
-      </div>
+
     </div>
   );
 }

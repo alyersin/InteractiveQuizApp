@@ -1,40 +1,16 @@
-import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
-import SignIn from '../pages/auth/SignIn'; 
-import RegistrationForm from './RegistrationForm';
+import { faList } from '@fortawesome/free-solid-svg-icons';  // Import the list icon
+import Link from 'next/link';
 
-
-
-export default function Home() {
-  console.log("Test from the homepage")
+const Home = () => {
   return (
-    <div className='container container-home'>
-
-        {/* <SignIn />
-        <RegistrationForm /> */}
-
+    <div className='container'>
       <h1>Bine ai venit</h1>
-      <Link className='categorii' href="/categories">
-       Categorii
+      <Link href="/categories" className="categorii">
+        <FontAwesomeIcon icon={faList} /> Categorii
       </Link>
-
-      <div className='bibliografie'>
-        <Link className='b-link' target="_blank" href="https://resources.quizalize.com/view/quiz/capitale-si-tari-c008f973-0fad-47e9-8d3b-6e6f9358d6fd">
-         Bibliografie quiz
-       </Link>
-      </div>
-
-      <div className='contact'>
-        <a className='a-home link-icon' href="https://www.linkedin.com/in/ersin-ali-228301107/" target="_blank" rel="noopener noreferrer">
-         <FontAwesomeIcon icon={faLinkedin} size="2x" />
-        </a>
-         <a className='a-home' href="https://github.com/alyersin?tab=repositories" target="_blank" rel="noopener noreferrer">
-         <FontAwesomeIcon icon={faGithub} size="2x" />
-       </a>
-
-      </div>
     </div>
-    
   );
-}
+};
+
+export default Home;

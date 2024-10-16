@@ -1,31 +1,72 @@
-body, html {
+/* Global styles */
+html, body {
   margin: 0;
   padding: 0;
   height: 100%;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-style: normal;
-  background-color: #bdd1c5;
-  background-image: url('./assets/quiz_7.jpg');
-  background-size: cover; 
-  background-position: center; 
+  background-color: #5072A7;
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
+  overflow-x: hidden; 
+}
+
+* {
+  box-sizing: border-box; 
 }
 
 h1, h2 {
   color: #213a57;
 }
 
-.container {
+/* Container styles */
+.container, .container-home {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: center; 
   align-items: center;
-  height: 100vh;
-  position: relative;
-  text-align: left;
+  min-height: calc(100vh - 221px); 
+  padding-bottom: 0;
 }
 
+/* Form layout */
+.adauga-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 80%; 
+  max-width: 600px; 
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+/* Footer styles */
+.footer {
+  background-color: #002244;
+  color: white;
+  text-align: center;
+  padding: 5px;
+}
+
+.social-icons {
+  margin: 20px 0;
+}
+
+.icon {
+  margin: 0 10px;
+  color: white;
+}
+
+.icon:hover {
+  color: #ccc;
+  transition: 0.3s ease-in-out;
+}
+
+/* Other styles */
 .answer-list {
   padding: 10px;
   color: rgb(136, 10, 52);
@@ -33,13 +74,6 @@ h1, h2 {
 
 .bibliografie {
   padding: 80px 0;
-}
-
-.contact {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
 }
 
 a, button {
@@ -65,6 +99,7 @@ button {
   background-color: #a36361;
 }
 
+/* Categories styles */
 .categories-link {
   display: flex;
   flex-direction: column;
@@ -75,23 +110,20 @@ button {
   text-align: center;
 }
 
-
 .categories-ul {
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
   font-size: 1.2rem;
-  gap: 10px; 
-  padding: 0; 
-/* border: 1px solid black; */
+  gap: 10px;
+  padding: 0;
 }
 
 .categories-li {
-  flex: 1 0 calc(50% - 10px); 
+  flex: 1 0 calc(50% - 10px);
   max-width: 410px;
-  margin: auto; 
+  margin: auto;
   text-align: center;
-/* border: 1px solid black; */
 }
 
 .question-ul {
@@ -99,39 +131,10 @@ button {
   flex-direction: column;
   list-style-type: none;
   font-size: 1.2rem;
-  gap: 10px; 
-
+  gap: 10px;
 }
 
-/* .question.li {
-
-} */
-
-
-.link-icon {
-  color: #0077B5; 
-  margin-right: 10px; 
-}
-
-.github-icon {
-  color: #171515; 
-  margin-right: 10px; 
-}
-
-.b-link {
-  background-color: #a36361;
-}
-
-.icon {
-  font-size: 1.5rem; 
-  display: inline-flex;
-  align-items: center;
-}
-
-.a-home {
-  background-color: transparent;
-}
-
+/* Answer result styles */
 .rasp-corect {
   color: green;
 }
@@ -144,78 +147,217 @@ button {
   background-color: #1aac5b;
 }
 
-.adauga-container {
-  padding: 100px 0 0 0;
+.github-icon {
+  color: #171515;
+  margin-right: 10px;
 }
 
-.adauga-form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  background-color: #fff;
+.b-link {
+  background-color: #a36361;
 }
 
-.adauga-form input[type="text"] {
-  width: 100%;
-  padding: 6px;
-  margin: 8px 0;
-  box-sizing: border-box;
-  border: 2px solid #ccc;
-  border-radius: 5px;
-  font-size: 1rem;
-  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+.icon {
+  font-size: 1.5rem;
+  display: inline-flex;
+  align-items: center;
 }
 
-.adauga-form input[type="text"]:hover {
-  border-color: #88d4a3;
-}
-
-.adauga-form input[type="text"]:focus {
-  border-color: #1aac5b;
-  box-shadow: 0 0 5px rgba(26, 172, 91, 0.5);
-  outline: none;
-}
-
-.variante-rasp, .intrebare, .rasp-corect {
-  display: flex;
-  flex-direction: column;
-  font-weight: 700;
-}
-
-.adauga-form label {
-  font-weight: 500;
-  margin-bottom: 5px;
-  display: block;
-  color: #333;
-  font-size: 1rem;
-}
-
-.adauga-btn {
-  background-color: #1aac5b;
+/* Header styles */
+.header {
+  background-color: #002244;
   color: white;
-  padding: 12px 20px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+}
+
+.header-link {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  margin: 0 20px;
+}
+
+.header-link:hover {
+  color: #ccc;
+  transition: 0.3s ease-in-out;
+}
+
+/* Logo styles */
+.logo {
+  font-size: 1.5rem;
+}
+
+/* Active link styling */
+.active-link {
+  color: blue;
+}
+
+/* Login and Register buttons */
+.auth-buttons {
+  display: flex;
+  
+  gap: 15px;
+}
+
+.auth-btn {
+  /* background-color: #1aac5b; */
+  background-color: #E97451;
+  color: white;
   border: none;
+  padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
   font-size: 1rem;
-  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.adauga-btn:hover {
+.auth-btn:hover {
   background-color: #159d4e;
-  transform: scale(1.05);
+  transition: 0.3s ease;
 }
 
-.adauga-btn:focus {
-  outline: 2px solid #1aac5b;
-  outline-offset: 4px;
+/* Hamburger button for small screens */
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
 }
 
+/* Responsive styles */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .header-nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #002244;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-100%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+  }
+
+  .header-nav.open {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .header-link {
+    margin: 10px 0;
+  }
+
+  .auth-buttons {
+    display: none;
+  }
+}
+
+/* Responsive design for smaller screens */
 @media (max-width: 768px) {
   .adauga-form {
     width: 90%;
   }
+
+  .header-link {
+    margin-bottom: 10px;
+  }
+
+  footer {
+    padding: 15px 0;
+  }
+}
+
+/* Styles specific to the questions page */
+
+.question-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Full-screen view without header and footer */
+  background-color: #0d0d2b; /* Dark background */
+  padding: 20px;
+  text-align: center;
+}
+
+.question-title {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  color: #ffffff; /* Light text for contrast */
+}
+
+.answer-options {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  max-width: 400px;
+}
+
+.answer-option {
+  margin-bottom: 15px;
+}
+
+.answer-button {
+  width: 100%;
+  padding: 15px;
+  border-radius: 25px;
+  background-color: #1a1a40; /* Darker button background */
+  color: #ffffff;
+  border: 2px solid #3944bc; /* Border to match the rounded look */
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.answer-button:hover {
+  background-color: #222260; /* Button hover effect */
+}
+
+.answer-button.selected {
+  background-color: #3944bc; /* Highlight for selected answer */
+}
+
+.feedback-text {
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+  color: #e2e2f7;
+}
+
+.next-button {
+  margin-top: 2rem;
+  padding: 12px 20px;
+  border-radius: 20px;
+  background-color: #1a1a40;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.next-button:hover {
+  background-color: #222260;
+}
+
+
+.go-home-button { 
+background-color: #3944bc;
 }

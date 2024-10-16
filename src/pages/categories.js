@@ -1,4 +1,3 @@
-// categories.js
 import Link from 'next/link';
 
 const categories = [
@@ -13,15 +12,12 @@ const categories = [
   { id: 'yes_no', name: 'Intrebare da/nu' },
   { id: 'technology', name: 'Tehnologie' },
 ];
-console.log(categories);
 
 export default function Categories() {
-  console.log(categories); 
-  
   return (
     <div className='container'>
       <ul className='categories-ul'>
-        {categories.map(category => (
+        {categories.map((category) => (
           <li className='categories-li' key={category.id}>
             <Link className='categories-link' href={`/quiz/${category.id}`}>
               {category.name}
