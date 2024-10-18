@@ -35,13 +35,57 @@ h1, h2 {
 .adauga-form {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 15px;
   width: 80%; 
   max-width: 600px; 
-  padding: 20px;
+  padding: 25px;
   border: 1px solid #ccc;
   border-radius: 10px;
   background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for better appearance */
+}
+
+/* Input fields */
+.adauga-form input[type="text"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+  background-color: #f9f9f9;
+}
+
+/* Focus state for inputs */
+.adauga-form input[type="text"]:focus {
+  border-color: #5072A7;
+  background-color: #fff;
+  outline: none;
+  box-shadow: 0 0 8px rgba(80, 114, 167, 0.2);
+}
+
+/* Button styling */
+.adauga-btn {
+  background-color: #a36361;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.adauga-btn:hover {
+  background-color: #8b504a;
+  transform: scale(1.05);
+}
+
+/* Form label styling */
+.adauga-form label {
+  font-size: 1rem;
+  color: #213a57;
+  margin-bottom: 5px;
 }
 
 /* Footer styles */
@@ -209,7 +253,6 @@ button {
 }
 
 .auth-btn {
-  /* background-color: #1aac5b; */
   background-color: #E97451;
   color: white;
   border: none;
@@ -357,7 +400,83 @@ button {
   background-color: #222260;
 }
 
-
 .go-home-button { 
-background-color: #3944bc;
+  background-color: #3944bc;
+}
+
+.add-question-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full screen height */
+}
+
+.categories-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.category-item {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+/* Form layout */
+.adauga-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 80%;
+  max-width: 600px; 
+  padding: 25px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for better appearance */
+}
+
+/* Input fields */
+.adauga-form input[type="text"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+  background-color: #f9f9f9;
+}
+
+/* Focus state for inputs */
+.adauga-form input[type="text"]:focus {
+  border-color: #5072A7;
+  background-color: #fff;
+  outline: none;
+  box-shadow: 0 0 8px rgba(80, 114, 167, 0.2);
+}
+
+/* Button styling */
+.adauga-btn {
+  background-color: #a36361;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.adauga-btn:hover {
+  background-color: #8b504a;
+  transform: scale(1.05);
+}
+
+/* Form label styling */
+.adauga-form label {
+  font-size: 1rem;
+  color: #213a57;
+  margin-bottom: 5px;
 }
