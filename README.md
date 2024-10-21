@@ -2,9 +2,11 @@
 
 ## Project Description
 
+## Deployment: https://interactive-quiz-app-rust.vercel.app/
+
 **InteractiveQuizApp** It's an interactive quiz app built with Next.js and React.
 
-## Instrucțiuni de Instalare și Rulare
+## Installation and Running Instructions
 
 ### 1. How to clone
 To clone this project locally, open terminal and run the following command:
