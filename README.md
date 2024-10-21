@@ -1,13 +1,13 @@
 # InteractiveQuizApp
 
-## Descrierea Proiectului
+## Project Description
 
-**InteractiveQuizApp** este o aplicație de quiz-uri interactive creată cu Next.js și React.
+**InteractiveQuizApp** It's an interactive quiz app built with Next.js and React.
 
 ## Instrucțiuni de Instalare și Rulare
 
-### 1. Clonarea Proiectului
-Pentru a clona acest proiect în local, deschide terminalul și execută comanda următoare:
+### 1. How to clone
+To clone this project locally, open terminal and run the following command:
 ```bash
 git clone https://github.com/your-username/InteractiveQuizApp.git
 cd InteractiveQuizApp
