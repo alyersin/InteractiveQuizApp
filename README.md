@@ -2,9 +2,9 @@
 
 ## Project Description
 
-## Deployment: https://interactive-quiz-app-rust.vercel.app/
-
 **InteractiveQuizApp** It's an interactive quiz app built with Next.js and React.
+
+## Deployment: https://interactive-quiz-app-rust.vercel.app/
 
 ## Installation and Running Instructions
 
